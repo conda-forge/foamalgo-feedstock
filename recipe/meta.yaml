@@ -11,39 +11,58 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win or py==27]
 
-requirements:
-  build:
-    - {{ compiler('cxx') }}
-    - cmake
-  host:
-    - python
-    - pip
-    - h5py >=2.10.0
-    - numpy >=1.16.1
-    - scipy >=1.2.1
-    - xsimd >=7.4.8
-    - tbb >=2019.9,<2021.0
-    - tbb-devel
-    - xtensor-blas >=0.17.2
-    - xtensor-python >=0.24.1
-  run:
-    - python
-    - h5py
-    - numpy
-    - scipy
-    - tbb
-
-test:
-  imports:
-    - pyfoamalgo
-    - pyfoamalgo.geometry
-  commands:
-    - test -d ${PREFIX}/include/foamalgo  # [unix]
-    - test -f ${PREFIX}/include/foamalgo/geometry.hpp  # [unix]
-    - test -f ${PREFIX}/lib/cmake/foamalgo/foamalgoConfig.cmake  # [unix]
+outputs:
+  - name: foamalgo
+    script: build_cpp.sh
+    requirements:
+      build:
+        - {{ compiler('cxx') }}
+        - cmake
+      host:
+        - tbb >=2019.9,<2021.0
+        - tbb-devel
+        - xsimd >=7.4.8
+        - xtensor-blas >=0.17.2
+      run:
+        - tbb
+        - tbb-devel
+        - {{ pin_compatible('xsimd', max_pin='x.x') }}
+        - {{ pin_compatible('xtensor-blas', max_pin='x.x') }}
+    test:
+      commands:
+        - test -d ${PREFIX}/include/foamalgo  # [unix]
+        - test -f ${PREFIX}/include/foamalgo/geometry.hpp  # [unix]
+        - test -f ${PREFIX}/lib/cmake/foamalgo/foamalgoConfig.cmake  # [unix]
+  - name: pyfoamalgo
+    script: build_py.sh
+    requirements:
+      build:
+        - {{ compiler('cxx') }}
+        - cmake
+      host:
+        - python
+        - pip
+        - h5py >=2.10.0
+        - numpy >=1.16.1
+        - scipy >=1.2.1
+        - xsimd >=7.4.8
+        - tbb >=2019.9,<2021.0
+        - tbb-devel
+        - xtensor-blas >=0.17.2
+        - xtensor-python >=0.24.1
+      run:
+        - python
+        - h5py
+        - numpy
+        - scipy
+        - tbb
+    test:
+      imports:
+        - pyfoamalgo
+        - pyfoamalgo.geometry
 
 about:
   home: https://github.com/zhujun98/foamalgo
