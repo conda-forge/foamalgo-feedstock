@@ -29,45 +29,17 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_python3.6.____cpython</td>
+              <td>linux_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/foamalgo-feedstock?branchName=master&jobName=linux&configuration=linux_64_python3.6.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/foamalgo-feedstock?branchName=master&jobName=linux&configuration=linux_64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_python3.7.____cpython</td>
+              <td>osx_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/foamalgo-feedstock?branchName=master&jobName=linux&configuration=linux_64_python3.7.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.8.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/foamalgo-feedstock?branchName=master&jobName=linux&configuration=linux_64_python3.8.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.6.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/foamalgo-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.6.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.7.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/foamalgo-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.7.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.8.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/foamalgo-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/foamalgo-feedstock?branchName=master&jobName=osx&configuration=osx_64_" alt="variant">
                 </a>
               </td>
             </tr>
@@ -84,6 +56,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-foamalgo-green.svg)](https://anaconda.org/conda-forge/foamalgo) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/foamalgo.svg)](https://anaconda.org/conda-forge/foamalgo) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/foamalgo.svg)](https://anaconda.org/conda-forge/foamalgo) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/foamalgo.svg)](https://anaconda.org/conda-forge/foamalgo) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pyfoamalgo-green.svg)](https://anaconda.org/conda-forge/pyfoamalgo) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pyfoamalgo.svg)](https://anaconda.org/conda-forge/pyfoamalgo) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pyfoamalgo.svg)](https://anaconda.org/conda-forge/pyfoamalgo) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pyfoamalgo.svg)](https://anaconda.org/conda-forge/pyfoamalgo) |
 
 Installing foamalgo
 ===================
@@ -94,10 +67,10 @@ Installing `foamalgo` from the `conda-forge` channel can be achieved by adding `
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `foamalgo` can be installed with:
+Once the `conda-forge` channel has been enabled, `foamalgo, pyfoamalgo` can be installed with:
 
 ```
-conda install foamalgo
+conda install foamalgo pyfoamalgo
 ```
 
 It is possible to list all of the versions of `foamalgo` available on your platform with:
