@@ -1,6 +1,6 @@
 {% set name = "foamalgo" %}
-{% set version = "0.0.4" %}
-{% set sha256 = "79c3dd9f54ea115b7d5528bd4556db70596f5190f39811af0b79346ed549207d" %}
+{% set version = "0.0.5" %}
+{% set sha256 = "418818865cbea4e4bf88f20bed2ef52f5c340a4376a28e19e84994163c7f3b55" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  skip: True  # [win or py==27]
+  skip: true  # [win or py==27]
 
 requirements:
   build:
@@ -50,7 +50,7 @@ about:
   license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE
-  summary: 'Algorithms for real-time data analysis in accelerator and photon science'
+  summary: Algorithms for real-time data analysis in accelerator and photon science
 
   doc_url: https://foamalgo.readthedocs.io/
   dev_url: https://github.com/zhujun98/foamalgo
