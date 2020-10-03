@@ -1,6 +1,6 @@
 {% set name = "foamalgo" %}
-{% set version = "0.0.5" %}
-{% set sha256 = "418818865cbea4e4bf88f20bed2ef52f5c340a4376a28e19e84994163c7f3b55" %}
+{% set version = "0.0.6" %}
+{% set sha256 = "12f740a361647ef68ce74d48f1a843d0173478a23a94deae568c7032f189af6c" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win or py==27]
 
 outputs:
