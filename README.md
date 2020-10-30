@@ -5,11 +5,13 @@ Home: https://github.com/zhujun98/foamalgo
 
 Package license: GPL-3.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/foamalgo-feedstock/blob/master/LICENSE.txt)
 
 Summary: Algorithms for real-time data analysis in accelerator and photon science
 
+Development: https://github.com/zhujun98/foamalgo
 
+Documentation: https://foamalgo.readthedocs.io/
 
 Current build status
 ====================
