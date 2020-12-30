@@ -1,6 +1,6 @@
 {% set name = "foamalgo" %}
-{% set version = "0.0.9" %}
-{% set sha256 = "ff6efd3613a11e52aafe53e4632f1de8ac37e26509467e4f6fc3f824145bf596" %}
+{% set version = "0.1.0" %}
+{% set sha256 = "9c20b7c891d29f529b15a6e7d2132e2bbe85510e79f57d39d673e771fbf33ef5" %}
 
 package:
   name: {{ name|lower }}
