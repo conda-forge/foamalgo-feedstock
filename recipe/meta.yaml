@@ -24,8 +24,8 @@ outputs:
       host:
         - tbb >=2019.9,<2021.0
         - tbb-devel
-        - xsimd >=7.4.8
-        - xtensor-blas >=0.17.2
+        - xsimd >=7.6.0
+        - xtensor-blas >=0.19.1
       run:
         - tbb
         - tbb-devel
@@ -48,11 +48,11 @@ outputs:
         - h5py >=2.10.0
         - numpy >=1.16.1
         - scipy >=1.2.1
-        - xsimd >=7.4.8
         - tbb >=2019.9,<2021.0
         - tbb-devel
-        - xtensor-blas >=0.17.2
-        - xtensor-python >=0.24.1
+        - xsimd >=7.6.0
+        - xtensor-blas >=0.19.1
+        - xtensor-python >=0.25.3
       run:
         - python
         - h5py
