@@ -1,6 +1,6 @@
 {% set name = "foamalgo" %}
-{% set version = "0.1.0" %}
-{% set sha256 = "9c20b7c891d29f529b15a6e7d2132e2bbe85510e79f57d39d673e771fbf33ef5" %}
+{% set version = "0.1.1" %}
+{% set sha256 = "d1d2ec70bb48786c5ff22e80cfe6e308cfd450b06347af13c6c4f40d1eb03a0e" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win or py==27]
 
 outputs:
@@ -24,8 +24,8 @@ outputs:
       host:
         - tbb >=2019.9,<2021.0
         - tbb-devel
-        - xsimd >=7.4.8
-        - xtensor-blas >=0.17.2
+        - xsimd >=7.6.0
+        - xtensor-blas >=0.19.1
       run:
         - tbb
         - tbb-devel
@@ -48,11 +48,11 @@ outputs:
         - h5py >=2.10.0
         - numpy >=1.16.1
         - scipy >=1.2.1
-        - xsimd >=7.4.8
         - tbb >=2019.9,<2021.0
         - tbb-devel
-        - xtensor-blas >=0.17.2
-        - xtensor-python >=0.24.1
+        - xsimd >=7.6.0
+        - xtensor-blas >=0.19.1
+        - xtensor-python >=0.25.3
       run:
         - python
         - h5py
