@@ -21,6 +21,7 @@ outputs:
       build:
         - {{ compiler('cxx') }}
         - cmake
+        - make    # [unix]
       host:
         - tbb >=2019.9,<2021.0
         - tbb-devel
@@ -42,6 +43,7 @@ outputs:
       build:
         - {{ compiler('cxx') }}
         - cmake
+        - make       # [unix]
       host:
         - python
         - pip
