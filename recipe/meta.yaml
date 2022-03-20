@@ -23,12 +23,11 @@ outputs:
         - cmake
         - make    # [unix]
       host:
-        - tbb >=2019.9,<2021.0
+        - tbb
         - tbb-devel
         - xsimd >=7.6.0
         - xtensor-blas >=0.19.1
       run:
-        - tbb
         - tbb-devel
         - {{ pin_compatible('xsimd', max_pin='x.x') }}
         - {{ pin_compatible('xtensor-blas', max_pin='x.x') }}
@@ -50,7 +49,7 @@ outputs:
         - h5py >=2.10.0
         - numpy >=1.16.1
         - scipy >=1.2.1
-        - tbb >=2019.9,<2021.0
+        - tbb
         - tbb-devel
         - xsimd >=7.6.0
         - xtensor-blas >=0.19.1
