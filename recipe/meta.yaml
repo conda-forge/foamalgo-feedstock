@@ -21,6 +21,7 @@ outputs:
       build:
         - {{ compiler('cxx') }}
         - cmake
+        - make  # [unix]
       host:
         - tbb >=2019.9
         - tbb-devel
