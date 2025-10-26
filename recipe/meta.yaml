@@ -50,6 +50,7 @@ outputs:
         - h5py >=2.10.0
         - numpy >=1.16.1
         - scipy >=1.2.1
+        - setuptools
         - tbb >=2019.9,<2021.0
         - tbb-devel
         - xsimd >=7.6.0
